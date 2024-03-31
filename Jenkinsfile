@@ -10,12 +10,6 @@ pipeline {
           git(url: 'https://github.com/JX18020/maven-samples-A6', branch: 'master')
         }
       }
-  
-      stage('run') {
-        steps {
-          bat 'mvn clean test'
-        }
-      }
   	  
       stage('bisect') {
       	steps {
